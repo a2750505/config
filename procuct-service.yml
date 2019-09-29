@@ -1,6 +1,6 @@
 #服务端口
 server:
-  port: 9999
+  port: 9601
 env: default
 branch: master
 
