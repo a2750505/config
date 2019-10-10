@@ -1,7 +1,7 @@
 #服务端口
 server:
   port: 9601
-aa.port: 30
+aa.port: 40
 env: default
 branch: master
 
