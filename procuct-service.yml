@@ -1,7 +1,6 @@
 #服务端口
 server:
   port: 9601
-#actuator端口
 
 
 aa.port:90
