@@ -14,6 +14,6 @@ zuul:
     
          echo1:
             path: /produce/**
-            serviceId: product-service 
+            serviceId: procuct-service 
     #http 开启head 禁止项
     sensitiveHeaders: vv,aa
