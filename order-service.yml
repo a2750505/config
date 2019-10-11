@@ -1,0 +1,48 @@
+#服务端口
+server:
+  port: 8781
+#商品服务
+spring:
+  #zipkin 地址  http://47.111.9.17:9411/zipkin/
+  zipkin:
+    base-url: http://47.111.9.17:9411/zipkin/
+  sleuth:
+     sampler:
+       probability: 1
+  #连接 redis
+  redis:
+    port: 6379
+    host: 47.111.9.17
+    database: 1
+#采用随机的负载均衡策略
+procuct-service:
+   ribbon:
+     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+feign:
+  #打开feign hystrix
+  hystrix:
+    enabled: true
+    # feign 连接其他服务超时设置
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 6000
+
+
+#hystrix 连接超时设置
+hystrix:
+  command:
+    default:
+       execution:
+          isolation:
+              thread:
+                 timeoutInMilliseconds: 2000
+# actuator 访问端口
+management:
+    endpoints:
+       web:
+         exposure:
+            include: "*"
