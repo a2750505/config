@@ -9,7 +9,7 @@ spring.rabbitmq.port=5672
 spring.rabbitmq.username=guest
 spring.rabbitmq.password=guest
 #其它参数
-aa.port: 90
+aa.port=90
 env: default
 branch: master
 
