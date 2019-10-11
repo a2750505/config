@@ -2,17 +2,20 @@
 server:
   port: 9601
 
-
+#actuator 端口
 management:
   endpoints:
      web:
       exposure:
-        include:  *
-
+        include:  /*
+        
+#rabbitmq
 spring.rabbitmq.host: 47.111.9.17
 spring.rabbitmq.port: 5672  
 spring.rabbitmq.username: guest
 spring.rabbitmq.password: guest  
+
+#其它
 aa.port: 90
 
 env: default
