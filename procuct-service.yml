@@ -1,6 +1,14 @@
 #服务端口
 server:
   port: 9601
+#actuator端口
+management.endpoints.web.exposure.include=*
+#rabbitmq
+spring.rabbitmq.host=47.111.9.17
+spring.rabbitmq.port=5672  
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+#其它参数
 aa.port: 90
 env: default
 branch: master
