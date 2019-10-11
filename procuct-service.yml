@@ -1,9 +1,8 @@
 #服务端口
 server:
   port: 9601
+aa.port=90
 
-
-aa.port:90
 env: default
 branch: master
 
