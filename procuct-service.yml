@@ -7,7 +7,7 @@ management:
   endpoints:
      web:
       exposure:
-        include: /*
+        include:  *
 
 spring.rabbitmq.host: 47.111.9.17
 spring.rabbitmq.port: 5672  
