@@ -1,0 +1,15 @@
+#zuul 端口号
+server:
+    port: 9003
+
+zuul:
+    #全部服务过滤
+    #ignoredServices: '*'
+    #服务
+    ignoredPatterns: /*-service/**
+    routes:
+         echo:
+            path: /order/**
+            serviceId: order-service
+    #http 开启head 禁止项
+    sensitiveHeaders: vv,aa
